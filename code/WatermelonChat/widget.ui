@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Watermelon Chat</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/chat/image/icon/icon_title.png</normaloff>:/chat/image/icon/icon_title.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTextEdit" name="textEditRead">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>461</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255, 230);
+border-top-left-radius:20px; 
+border-top-right-radius:20px;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>100</y>
+     <width>381</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255, 230);
+border-radius: 20px;</string>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="userNumber">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>720</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/chat/image/icon/background_peopleleft.png);</string>
+   </property>
+   <property name="text">
+    <string>在线人数：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="voiceButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>700</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(50, 50, 50,0); border-radius: 6px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_novoice.png);}
+QPushButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="textButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>700</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(50, 50, 50,0); border-radius: 6px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_.png);}
+QPushButton:hover { background-color:rgba(172, 178, 148, 100)}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendfile">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>700</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(50, 50, 50,0); border-radius: 6px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_file.png);}
+QPushButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="imageButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>700</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(50, 50, 50,0); border-radius: 6px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_pic.png);}
+QPushButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>700</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(50, 50, 50,0); border-radius: 6px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_download.png);}
+QPushButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WatermelonChat">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>431</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/chat/image/title.png);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="fontSizeComboBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>490</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 2px 1px 2px;  /*针对于组合框中的文本内容*/
+    /*min-width: 9em;   组合框的最小宽度*/
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+image: url(:/chat/image/icon/icon_menu.png);
+}
+QComboBox::drop-down:hover { background-color: rgb(50, 50, 50,255);}</string>
+   </property>
+   <property name="currentText">
+    <string>10</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>17</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>18</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QToolButton" name="textbold">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>490</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px;border-image: url(:/chat/image/icon/icon_bold.png);}
+QToolButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="textitalic">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>490</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_italic.png);}
+QToolButton:hover { background-color:rgba(172, 178, 148, 100)}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="textUnderline">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>490</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_underline.png);}
+QToolButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="textcolor">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>490</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255); border-image: url(:/chat/image/icon/icon_color.png);}
+QToolButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="clear">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>490</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255);border-image: url(:/chat/image/icon/icon_del.png); }
+QToolButton:hover { background-color:rgba(172, 178, 148, 100)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="fontComboBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>490</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 2px 1px 2px;  /*针对于组合框中的文本内容*/
+    /*min-width: 9em;   组合框的最小宽度*/
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+	image: url(:/chat/image/icon/icon_menu.png);
+}
+QComboBox::drop-down:hover { background-color: rgb(50, 50, 50,255);}</string>
+   </property>
+   <property name="currentText">
+    <string>宋体</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="gameButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>720</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/chat/image/icon/icon_game.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>关闭</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255); }
+QToolButton:hover { background-color: rgb(172, 178, 148);}</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/chat/image/icon/icon_close.png</normaloff>:/chat/image/icon/icon_close.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="hideButton">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>最小化</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton { background-color: rgb(50, 50, 50,0); border-radius: 3px; color: rgb(255, 255, 255); }
+QToolButton:hover { background-color: rgb(172, 178, 148);}</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/chat/image/icon/icon_hide.png</normaloff>:/chat/image/icon/icon_hide.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SendButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>710</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>103</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { background-color: rgb(172, 178, 148,200); border-radius: 3px; color: rgb(255, 255, 255); }
+ QPushButton:hover { background-color: rgb(172, 178, 148,255);}
+</string>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>671</y>
+     <width>461</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom-left-radius:20px; 
+border-bottom-right-radius:20px; 
+background-color: rgb(255, 255, 255, 230);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="webButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>760</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { background-color: rgb(172, 178, 148,100); border-radius: 3px; color: rgb(255, 255, 255); }
+ QPushButton:hover { background-color: rgb(172, 178, 148,150);}
+</string>
+     </property>
+     <property name="text">
+      <string>follow我们的GitHub</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="changeButton">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { background-color: rgb(200, 200, 200,0); border-radius: 3px; color: rgb(255, 255, 255); }
+QPushButton:hover { background-color: rgb(172, 178, 148);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/chat/image/icon/icon_menu.png</normaloff>:/chat/image/icon/icon_menu.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditWrite">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>530</y>
+       <width>461</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-left-radius:0px; 
+border-top-right-radius:0px;
+background-color: rgb(255, 255, 255,230);
+border-top:2px solid #e1e0e0;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2"/>
+  </widget>
+  <zorder>stackedWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>textEditRead</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>userNumber</zorder>
+  <zorder>voiceButton</zorder>
+  <zorder>textButton</zorder>
+  <zorder>sendfile</zorder>
+  <zorder>imageButton</zorder>
+  <zorder>save</zorder>
+  <zorder>WatermelonChat</zorder>
+  <zorder>fontSizeComboBox</zorder>
+  <zorder>textbold</zorder>
+  <zorder>textitalic</zorder>
+  <zorder>textUnderline</zorder>
+  <zorder>textcolor</zorder>
+  <zorder>clear</zorder>
+  <zorder>fontComboBox</zorder>
+  <zorder>gameButton</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>hideButton</zorder>
+  <zorder>SendButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

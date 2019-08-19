@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/chat">
+        <file>image/icon/background_peopleleft.png</file>
+        <file>image/icon/icon_.png</file>
+        <file>image/icon/icon_bold.png</file>
+        <file>image/icon/icon_close.png</file>
+        <file>image/icon/icon_color.png</file>
+        <file>image/icon/icon_del.png</file>
+        <file>image/icon/icon_download.png</file>
+        <file>image/icon/icon_emoji.png</file>
+        <file>image/icon/icon_file.png</file>
+        <file>image/icon/icon_hide.png</file>
+        <file>image/icon/icon_italic.png</file>
+        <file>image/icon/icon_pic.png</file>
+        <file>image/icon/icon_settext.png</file>
+        <file>image/icon/icon_underline.png</file>
+        <file>image/icon/icon_voice.png</file>
+        <file>image/title.png</file>
+        <file>image/background1.png</file>
+        <file>image/icon/icon_title.png</file>
+        <file>image/icon/icon_game.png</file>
+        <file>image/icon/icon_menu.png</file>
+        <file>image/icon/bottom.png</file>
+        <file>image/icon/top.png</file>
+        <file>image/icon/icon_title1.png</file>
+        <file>image/voice0.png</file>
+        <file>image/voice1.png</file>
+        <file>image/voice2.png</file>
+        <file>image/voice3.png</file>
+        <file>image/icon/icon_novoice.png</file>
+        <file>image/clientBackground.png</file>
+        <file>image/icon/icon_clientTitle.png</file>
+        <file>image/wheel.png</file>
+        <file>image/icon/icon_change.png</file>
+        <file>image/background2.jpg</file>
+        <file>image/chatBackground.jpg</file>
+        <file>image/chatBackground1.png</file>
+    </qresource>
+    <qresource prefix="/other">
+        <file>game/image/blocks.bmp</file>
+        <file>game/image/faces.bmp</file>
+        <file>game/image/frame.bmp</file>
+        <file>game/image/timenumber.bmp</file>
+    </qresource>
+</RCC>
