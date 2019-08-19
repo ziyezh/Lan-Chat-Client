@@ -17,4 +17,45 @@
 
 核心功能是登陆注册、文字传输、实时语音、文件传输。
 
-## 
+## 项目演示
+
+### 主要功能
+
+1. 开启服务器
+
+   ![1](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/1.gif)
+
+2. 登陆注册
+
+   ![2](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/2.gif)
+
+3. 群聊发送信息
+
+   ![3](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/3.gif)
+
+4. 群发文件
+
+   ![4](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/4.gif)
+
+5. 群发图片
+
+   ![5](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/5.gif)
+
+6. 群语音
+
+   ![6](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/6.gif)
+
+7. 私聊界面
+
+   ![7](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/7.gif)
+
+### 一些细节
+
+1. 改变发送文字颜色、大小、字体、加粗、倾斜
+
+   ![8](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/8.gif)
+
+2. 更换皮肤
+
+   ![9](https://github.com/EmilyZhangzzy/Watermelon_Chat/blob/master/ShowGif/9.gif)
+
