@@ -722,7 +722,7 @@ void Widget::on_voiceButton_clicked(bool checked)
 
 void Widget::on_webButton_clicked()
 {
-    const QUrl regUrl(QLatin1String("https://github.com/wc-chat1/wc_chat"));
+    const QUrl regUrl(QLatin1String("https://github.com/EmilyZhangzzy/Watermelon_Chat"));
     QDesktopServices::openUrl(regUrl);
 }
 
